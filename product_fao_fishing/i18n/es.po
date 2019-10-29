@@ -8,14 +8,14 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-05 12:01+0200\n"
 "PO-Revision-Date: 2018-07-05 12:24+0200\n"
+"Last-Translator: Sergio Teruel <sergio.teruel@tecnativa.com>\n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
-"Last-Translator: Sergio Teruel <sergio.teruel@tecnativa.com>\n"
-"Language: es\n"
 
 #. module: product_fao_fishing
 #: model:product.attribute.value,name:product_fao_fishing.fao_fishing_area_1
@@ -32,6 +32,11 @@ msgstr "África - Aguas continentales"
 #: model:product.attribute.value,name:product_fao_fishing.fao_fishing_area_3
 msgid "America, South - Inland waters"
 msgstr "América del Sur - Aguas continentales"
+
+#. module: product_fao_fishing
+#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_angling
+msgid "Angling"
+msgstr ""
 
 #. module: product_fao_fishing
 #: model:product.attribute.value,name:product_fao_fishing.fao_fishing_area_98
@@ -98,35 +103,35 @@ msgid "Atlantic, Western Central"
 msgstr "Sáhara occidental"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_child_id
+#: model:ir.model,name:product_fao_fishing.model_product_attribute_value
+#, fuzzy
+msgid "Attribute Value"
+msgstr "product.attribute.value"
+
+#. module: product_fao_fishing
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__child_id
 msgid "Child Technique"
 msgstr "Subtécnica"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_complete_name
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__complete_name
 msgid "Complete Name"
 msgstr "Nombre completo"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_create_uid
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_create_date
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__create_date
 msgid "Created on"
 msgstr "Creado en"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_display_name
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__display_name
 msgid "Display Name"
 msgstr "Mostrar Nombre"
-
-#. module: product_fao_fishing
-#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_draft_nets
-#, fuzzy
-msgid "Draft nets"
-msgstr "Borrador"
 
 #. module: product_fao_fishing
 #: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_enmanelle_nets
@@ -134,7 +139,7 @@ msgid "Enmanelle nets and similar"
 msgstr ""
 
 #. module: product_fao_fishing
-#: code:addons/product_fao_fishing/models/product_fao_fishing_technique.py:52
+#: code:addons/product_fao_fishing/models/product_fao_fishing_technique.py:50
 #, python-format
 msgid "Error ! You cannot create recursive techniques."
 msgstr "¡Error! No puede crear técnicas recursivas"
@@ -150,15 +155,22 @@ msgid "FAO Fishing Areas"
 msgstr "Areas de pesca FAO"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_product_fao_fishing_technique_id
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_template_fao_fishing_technique_id
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_product__fao_fishing_technique_id
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_template__fao_fishing_technique_id
 msgid "FAO Fishing Tech."
 msgstr ""
 
 #. module: product_fao_fishing
-#: model:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_search_view
+#: model_terms:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_search_view
 msgid "FAO Techniques"
 msgstr ""
+
+#. module: product_fao_fishing
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_product__fao_fishing_area_ids
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_template__fao_fishing_area_ids
+#, fuzzy
+msgid "Fao Fishing Area"
+msgstr "Areas de pesca FAO"
 
 #. module: product_fao_fishing
 #: model:ir.model,name:product_fao_fishing.model_product_fao_fishing_technique
@@ -176,7 +188,7 @@ msgid "Harrows"
 msgstr ""
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_id
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__id
 msgid "ID"
 msgstr "ID"
 
@@ -199,28 +211,22 @@ msgid "Indian Ocean, Western"
 msgstr "Territorio británico del Océano Índico"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique___last_update
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique____last_update
 #, fuzzy
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_write_uid
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__write_uid
 #, fuzzy
 msgid "Last Updated by"
 msgstr "Última modificación por"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_write_date
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__write_date
 #, fuzzy
 msgid "Last Updated on"
 msgstr "Última actualización en"
-
-#. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_parent_left
-#, fuzzy
-msgid "Left Parent"
-msgstr "Padre izquierdo"
 
 #. module: product_fao_fishing
 #: model:product.attribute.value,name:product_fao_fishing.fao_fishing_area_99
@@ -234,14 +240,14 @@ msgid "Mediterranean and Black Sea"
 msgstr "Negro"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_name
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__name
 #, fuzzy
 msgid "Name"
 msgstr "Nombre"
 
 #. module: product_fao_fishing
-#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_traps
-msgid "Nasas and traps"
+#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_netting
+msgid "Netting"
 msgstr ""
 
 #. module: product_fao_fishing
@@ -287,18 +293,29 @@ msgid "Pacific, Western Central"
 msgstr "Sáhara occidental"
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_parent_id
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: product_fao_fishing
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique__parent_id
 #, fuzzy
 msgid "Parent Technique"
 msgstr "Padre"
 
 #. module: product_fao_fishing
-#: model:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_search_view
+#: model:ir.model,name:product_fao_fishing.model_product_template_attribute_value
+#, fuzzy
+msgid "Product Attribute Value"
+msgstr "product.attribute.value"
+
+#. module: product_fao_fishing
+#: model_terms:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_search_view
 msgid "Product Fao Fishing Techniques"
 msgstr ""
 
 #. module: product_fao_fishing
-#: model:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_list_view
+#: model_terms:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_list_view
 msgid "Product Fao Techiniques"
 msgstr "Técnicas de pesca"
 
@@ -318,20 +335,19 @@ msgid "Purse seines and nets hoisted"
 msgstr ""
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_fao_fishing_technique_parent_right
-#, fuzzy
-msgid "Right Parent"
-msgstr "Padre derecho"
-
-#. module: product_fao_fishing
-#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_hooks
-msgid "Sedales and hooks"
+#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_spearfishing
+msgid "Spearfishing"
 msgstr ""
 
 #. module: product_fao_fishing
-#: model:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_form_view
+#: model_terms:ir.ui.view,arch_db:product_fao_fishing.product_fao_techique_form_view
 msgid "Technique name"
 msgstr "Nombre técnica"
+
+#. module: product_fao_fishing
+#: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_trapping
+msgid "Trapping"
+msgstr ""
 
 #. module: product_fao_fishing
 #: model:product.fao.fishing.technique,name:product_fao_fishing.fishing_technique_trawl_nets
@@ -339,12 +355,19 @@ msgid "Trawl nets"
 msgstr ""
 
 #. module: product_fao_fishing
-#: model:ir.model.fields,field_description:product_fao_fishing.field_product_attribute_value_fao_zone_code
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_attribute_value__fao_zone_code
+#: model:ir.model.fields,field_description:product_fao_fishing.field_product_template_attribute_value__fao_zone_code
 msgid "Zone Code"
 msgstr "Código Zona"
 
-#. module: product_fao_fishing
-#: model:ir.model,name:product_fao_fishing.model_product_attribute_value
 #, fuzzy
-msgid "product.attribute.value"
-msgstr "product.attribute.value"
+#~ msgid "Draft nets"
+#~ msgstr "Borrador"
+
+#, fuzzy
+#~ msgid "Left Parent"
+#~ msgstr "Padre izquierdo"
+
+#, fuzzy
+#~ msgid "Right Parent"
+#~ msgstr "Padre derecho"
