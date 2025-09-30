@@ -15,4 +15,5 @@
     "website": "https://github.com/OCA/community-data-files",
     "license": "AGPL-3",
     "installable": True,
+    "pre_init_hook": "pre_init_hook",
 }
