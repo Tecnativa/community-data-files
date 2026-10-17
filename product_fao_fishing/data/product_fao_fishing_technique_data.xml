@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
     <record id="fao_fishing_technique" model="product.attribute">
         <field name="name">FAO Fishing Technique</field>
