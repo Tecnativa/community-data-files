@@ -1,6 +1,6 @@
 # Copyright 2025 Tecnativa - Carlos Roca
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 from odoo.exceptions import ValidationError
 
 
@@ -17,7 +17,7 @@ class SanitaryRegistry(models.Model):
         )
         if other_regs:
             raise ValidationError(
-                _(
+                self.env._(
                     "There are already sanitary registrations with values %s.",
                     other_regs.mapped("name"),
                 )
